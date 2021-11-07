@@ -6,6 +6,7 @@
     --bg-color: #2f303a;
     --secondary-bg-color: #f5f4fa;
     --grey-icon-color: #afb1b8;
+    --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -90,6 +91,8 @@ ul {
     padding: 32px 0;
 
     font-weight: 500;
+
+    transition: color 250ms var(--cubic-bezier);
 }
 
 .menu-item {
@@ -110,6 +113,8 @@ ul {
 .contact-icon {
     margin-right: 10px;
     fill: var(--primary-text-color);
+
+    transition: fill 250ms var(--cubic-bezier);
 }
 
 .contact-icon.icon-mail {
@@ -273,6 +278,8 @@ ul {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+
+    transition: background-color 250ms ;
 }
 .social-link:not(:last-child),
 .footer .item:not(:last-child) {
@@ -282,6 +289,8 @@ ul {
     width: 20px;
     height: 20px;
     fill: var(--grey-icon-color);
+
+    transition: fill 250ms var(--cubic-bezier);
 }
 .social-link:hover,
 .social-link:focus {
@@ -310,6 +319,12 @@ ul {
     color: var(--grey-icon-color);
     border: 1px solid var(--grey-icon-color);
     border-radius: 4px;
+}
+.clients-logo .link .icon {
+    transition: fill 250ms var(--cubic-bezier);
+}
+.clients-logo .link {
+    transition: border-color 250ms var(--cubic-bezier);
 }
 .clients-logo .link:hover,
 .clients-logo .link:focus {
@@ -340,6 +355,10 @@ ul {
     font-size: 16px;
     line-height: 1.62;
     background-color: #f5f4fa;
+
+    transition: color 250ms var(--cubic-bezier),
+    background-color 250ms var(--cubic-bezier),
+    box-shadow 250ms var(--cubic-bezier);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -364,6 +383,8 @@ ul {
 .project-link {
     display: block;
     padding-bottom: 20px;
+
+    transition: box-shadow 250ms var(--cubic-bezier);
 }
 .project-link:hover,
 .project-link:focus {
@@ -427,6 +448,8 @@ ul {
 .footer-link {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250ms var(--cubic-bezier);
 }
 .footer-link:not(:last-child) {
     margin-bottom: 9px;
